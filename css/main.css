@@ -1,0 +1,27 @@
+* {
+    background-color: rgba(18, 56, 43, 0.171);
+    color: black;
+    font-weight: 700;
+}
+
+.contenedor {
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px;
+    border-radius: 10px;
+    width: 80px;
+    background-color: rgba(221, 255, 127, 0.61);
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    width: 65%;
+
+}
