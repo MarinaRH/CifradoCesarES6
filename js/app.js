@@ -21,7 +21,7 @@ bCipher.addEventListener('click',() => {
       let space = ' ';
       strLetC += space;                     
     }else{
-      alert('ingrese solo texto');
+      alert(`ingrese solo texto`);
     } 
   } 
   textCipher.value = strLetC ; 
@@ -48,7 +48,7 @@ bDecipher.addEventListener('click',() => {
       let space = ' ';
       strLet += space;                     
     }else{
-      alert('ingrese solo texto');
+      alert(`ingrese solo texto`);
     } 
   } 
   textDecipher.value = strLet ; 
