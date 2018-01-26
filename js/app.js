@@ -1,6 +1,6 @@
-let bCipher = document.querySelector('#cipher');
-let bDecipher = document.querySelector('#decipher');
-
+const bCipher = document.querySelector('#cipher');
+const bDecipher = document.querySelector('#decipher');
+const spaceNum = 33;
 //Función para Cifrar
 bCipher.addEventListener('click',() => {
   let textCipher = document.querySelector('#cipherText'); 
@@ -10,11 +10,11 @@ bCipher.addEventListener('click',() => {
   for(i = 0; i < message.length; i++){      
     let asc = message.charCodeAt(i); 
     if(asc >= 64 && asc <= 91){                      
-      let newAsc = (asc - 65 + 33) % 26 + 65;   
+      let newAsc = (asc - 65 + spaceNum) % 26 + 65;   
       let newLet = String.fromCharCode(newAsc);  
       strLetC += newLet;                         
     }else if(asc >= 96 && asc <= 123) {
-      let newAscm = (asc - 97 + 33) % 26 +97;  
+      let newAscm = (asc - 97 + spaceNum) % 26 +97;  
       let newLetm = String.fromCharCode(newAscm);
       strLetC += newLetm; 
     }else if (asc === 32) {
@@ -37,11 +37,11 @@ bDecipher.addEventListener('click',() => {
   for(i = 0; i < message.length; i++){      
     let asc = message.charCodeAt(i); 
     if(asc >= 64 && asc <= 91){                      
-      let newAsc = (asc + 65 - 33) % 26 + 65;   
+      let newAsc = (asc + 65 - spaceNum) % 26 + 65;   
       let newLet = String.fromCharCode(newAsc);  
       strLet += newLet;                         
     }else if(asc >= 96 && asc <= 123) {
-      let newAscm = (asc + 97 + 33) % 26 +97;  
+      let newAscm = (asc + 97 + spaceNum) % 26 +97;  
       let newLetm = String.fromCharCode(newAscm);
       strLet += newLetm; 
     }else if (asc === 32) {
